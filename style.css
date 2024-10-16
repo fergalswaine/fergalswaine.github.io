@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -21,14 +20,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -53,6 +50,8 @@ a {
   text-decoration: none;
 }
 
+
+
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -69,7 +68,6 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -124,7 +122,6 @@ a:hover {
 }
 
 /* SECTIONS */
-
 section {
   padding: 4vh 2rem;
   height: auto;
@@ -137,7 +134,6 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   flex-direction: column;
@@ -175,90 +171,87 @@ section {
 
 /* Centered class for header */
 .centered {
-    text-align: center; /* Center the header text */
-    margin: 1rem 0; /* Add some margin above and below for spacing */
+  text-align: center; /* Center the header text */
+  margin: 1rem 0; /* Add some margin above and below for spacing */
 }
-
 
 /* ABOUT SECTION */
 #about {
-    padding: 4vh 2rem;
+  padding: 4vh 2rem;
 }
 
 .section-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align the container */
-    margin-top: 2rem; /* Add margin above the container */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align the container */
+  margin-top: 2rem; /* Add margin above the container */
 }
 
 /* Profile Picture Container */
 .section__pic-container {
-    display: flex; /* Enable flex layout */
-    justify-content: center; /* Center align the image */
-    align-items: center; /* Center vertically */
-    margin-bottom: 1rem; /* Space below the image */
+  display: flex; /* Enable flex layout */
+  justify-content: center; /* Center align the image */
+  align-items: center; /* Center vertically */
+  margin-bottom: 1rem; /* Space below the image */
 }
 
 /* Profile Picture Styling */
 .about-pic {
-    width: 150px; /* Set a consistent width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  width: 150px; /* Set a consistent width for the image */
+  height: 150px; /* Set a consistent height for the image */
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
 }
 
 /* About Section Containers */
 .about-details-container {
-    display: flex; /* Enable flex layout */
-    justify-content: center; /* Center align the content */
-    align-items: flex-start; /* Align items at the start for better layout */
+  display: flex; /* Enable flex layout */
+  justify-content: center; /* Center align the content */
+  align-items: flex-start; /* Align items at the start for better layout */
 }
 
 /* Container for Detail Boxes */
 .about-containers {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center align the boxes */
-    gap: 2rem; /* Space between each detail box */
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center; /* Center align the boxes */
+  gap: 2rem; /* Space between each detail box */
 }
 
 /* Individual Detail Boxes */
 .details-container {
-    text-align: center; /* Center text in each detail box */
-    background-color: rgba(240, 240, 240, 0.8); /* Light background for contrast */
-    padding: 1rem; /* Padding for breathing room */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 200px; /* Set a maximum width for consistency */
+  text-align: center; /* Center text in each detail box */
+  background-color: rgba(240, 240, 240, 0.8); /* Light background for contrast */
+  padding: 1rem; /* Padding for breathing room */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 200px; /* Set a maximum width for consistency */
 }
 
 /* Images in Detail Boxes */
 .details-container img {
-    margin-bottom: 0.5rem; /* Space between image and text */
-    max-width: 50px; /* Set a maximum width for icons */
+  margin-bottom: 0.5rem; /* Space between image and text */
+  max-width: 50px; /* Set a maximum width for icons */
 }
 
 /* About Section Text Formatting */
 .text-container {
-    text-align: center; /* Center the paragraph */
-    margin-top: 1rem; /* Space above the paragraph */
-    padding: 1rem; /* Add padding for breathing room */
-    background-color: rgba(240, 240, 240, 0.8); /* Light background for emphasis */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 800px; /* Maximum width to limit paragraph size */
-    margin-left: auto; /* Centering effect */
-    margin-right: auto; /* Centering effect */
-    line-height: 1.6; /* Increased line height for readability */
+  text-align: center; /* Center the paragraph */
+  margin-top: 1rem; /* Space above the paragraph */
+  padding: 1rem; /* Add padding for breathing room */
+  background-color: rgba(240, 240, 240, 0.8); /* Light background for emphasis */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Maximum width to limit paragraph size */
+  margin-left: auto; /* Centering effect */
+  margin-right: auto; /* Centering effect */
+  line-height: 1.6; /* Increased line height for readability */
 }
 
-  
-  .text-container p {
-    color: rgb(85, 85, 85); /* Text color */
-    font-size: 1.1rem; /* Slightly larger font size for better readability */
-    margin: 0; /* Remove default margins */
-  }
-  
+.text-container p {
+  color: rgb(85, 85, 85); /* Text color */
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+  margin: 0; /* Remove default margins */
+}
 
 /* Media Queries for About Section */
 @media (max-width: 768px) {
@@ -274,151 +267,136 @@ section {
 
 /* CERTIFICATES SECTION */
 #certificates {
-    padding: 2vh 1rem; /* Reduce top/bottom padding */
-    background-color: #f8f9fa; /* Light background for distinction */
+  padding: 2vh 1rem; /* Reduce top/bottom padding */
+  background-color: #f8f9fa; /* Light background for distinction */
 }
 
 .certificates-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-    column-gap: 0.5rem; /* Space between columns */
-    row-gap: 0.5rem; /* Space between rows */
-    justify-items: center; /* Center items horizontally */
-    max-width: 800px; /* Set a max width for the entire container */
-    margin: 0 auto; /* Center the container */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  column-gap: 0.5rem; /* Space between columns */
+  row-gap: 0.5rem; /* Space between rows */
+  justify-items: center; /* Center items horizontally */
+  max-width: 800px; /* Set a max width for the entire container */
+  margin: 0 auto; /* Center the container */
 }
 
 .certificate {
-    text-align: center;
-    max-width: 120px; /* Set a narrower width for each certificate */
-    margin: 0; /* Remove any margins */
+  text-align: center;
+  max-width: 120px; /* Set a narrower width for each certificate */
+  margin: 0; /* Remove any margins */
 }
 
 .certificate-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller size */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller size */
 }
 
 .certificate p {
-    margin-top: 0.2rem; /* Reduce margin between image and text */
-    font-weight: 500;
-    color: rgb(85, 85, 85);
+  margin-top: 0.2rem; /* Reduce margin between image and text */
+  font-weight: 500;
+  color: rgb(85, 85, 85);
 }
 
 /* Media Queries for Certificates Section */
 @media (max-width: 768px) {
-    .certificates-container {
-        grid-template-columns: repeat(2, 1fr); /* Stack 2 items per row on small screens */
-    }
+  .certificates-container {
+    grid-template-columns: repeat(2, 1fr); /* Stack 2 items per row on small screens */
+  }
 }
 
+/* SKILLS SECTION */
+#skills {
+  padding: 2rem 0; /* Add some padding */
+}
 
+.skills-container {
+  display: flex; /* Enable flex layout */
+  flex-wrap: wrap; /* Allow wrapping of skills */
+  justify-content: center; /* Center align skills */
+  gap: 1rem; /* Space between skills */
+}
 
-
+.skill {
+  background-color: rgba(240, 240, 240, 0.8); /* Light background for contrast */
+  padding: 10px 20px; /* Padding for breathing room */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-weight: 600; /* Bold text */
+  color: black; /* Text color */
+  text-align: center; /* Center the text */
+  min-width: 100px; /* Set a minimum width for each skill */
+}
 
 /* CONTACT SECTION */
-
 #contact {
-    text-align: center;
-    padding: 2rem; /* Add padding to the section */
-  }
-  
-  .contact-box {
-    background-color: #f8f9fa; /* Light background color */
-    border: 1px solid #e0e0e0; /* Light border for definition */
-    border-radius: 8px; /* Rounded corners */
-    padding: 2rem; /* Inner padding for spacing */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 500px; /* Set a max width for the box */
-    margin: 0 auto; /* Center the box */
-  }
-  
-  .contact-info-upper-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-  }
-  
-  .contact-info-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Space between icon and text */
-    margin-bottom: 1rem; /* Spacing between contact items */
-  }
-  
-  .contact-info-container img {
-    height: 45px; /* Consistent icon size */
-    width: 45px; /* Consistent icon size */
-  }
-  
-  .contact-info-container a {
-    color: black; /* Link color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .contact-info-container a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
-
-/* BUTTONS */
-
-.btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+  text-align: center; /* Center text in the contact section */
+  padding: 2rem; /* Add padding to the section */
 }
 
-.btn-color-1 {
-  background-color: #007bff; /* Adjust as needed */
-  color: white;
+.title {
+  font-size: 2.5rem; /* Adjust title size as needed */
+  margin: 0 auto 1rem; /* Center title with auto margin */
+  display: block; /* Ensure it behaves as a block element */
 }
 
-.btn-color-2 {
-  background-color: #28a745; /* Adjust as needed */
-  color: white;
+.contact-box {
+  background-color: #f4f4f4; /* Optional: Background color for contrast */
+  padding: 2rem; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Limit the width */
+  width: 100%; /* Ensure it uses available width */
+  margin: 0 auto; /* Center the contact box */
+  text-align: left; /* Align text left for contact info */
 }
+
+.contact-info-upper-container {
+  display: flex; /* Use flexbox for contact info */
+  justify-content: space-around; /* Space out items evenly */
+  margin-top: 1rem; /* Space above the contact info */
+}
+
+.contact-info-container {
+  display: flex; /* Flex for icon and text alignment */
+  align-items: center; /* Align items vertically */
+}
+
+.contact-info-container img {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+
 
 /* FOOTER */
-
 footer {
-  text-align: center;
-  padding: 1rem 0;
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  padding: 1rem; /* Padding for breathing room */
 }
 
-/* MEDIA QUERIES */
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212; /* Dark background for dark mode */
+  color: #ffffff; /* White text for dark mode */
+}
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
-  .hamburger-menu {
-    display: flex;
-  }
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #1f1f1f; /* Dark background for nav and footer */
+}
 
-  #desktop-nav {
-    flex-direction: column;
-    align-items: center;
-  }
+body.dark-mode a {
+  color: #ffffff; /* White links for dark mode */
+}
 
-  .section-container {
-    flex-direction: column;
-  }
+body.dark-mode .skills-container .skill {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly darker for dark mode */
+}
 
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .section__text__p2 {
-    font-size: 1.5rem;
-  }
-
-  .contact-info-upper-container {
-    flex-direction: column;
-  }
+body.dark-mode .certificate {
+  background-color: rgba(255, 255, 255, 0.1); /* Darker background for certificates */
 }
