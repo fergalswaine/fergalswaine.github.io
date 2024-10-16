@@ -12,6 +12,23 @@
     }
   }
   
+  @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust body font size for smaller screens */
+    }
+
+    .about-details-container, .skills-container {
+        flex-direction: column; /* Stack details vertically on small screens */
+        align-items: center;
+    }
+
+    .details-container, .skill {
+        width: 80%; /* Ensure containers fit the screen */
+        margin: 5px auto; /* Center them */
+    }
+}
+
+
   @media screen and (max-width: 1200px) {
     #desktop-nav {
       display: none;
