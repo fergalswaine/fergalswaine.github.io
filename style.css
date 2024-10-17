@@ -287,6 +287,25 @@ section {
   margin: 0; /* Remove any margins */
 }
 
+.certificate a {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate a:hover {
+  transform: scale(1.1); /* Make the image pop out slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+
 .certificate-img {
   width: 100%;
   height: auto;
@@ -313,22 +332,55 @@ section {
 }
 
 .skills-container {
-  display: flex; /* Enable flex layout */
-  flex-wrap: wrap; /* Allow wrapping of skills */
-  justify-content: center; /* Center align skills */
-  gap: 1rem; /* Space between skills */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller minimum size for compact look */
+  gap: 10px; /* Reduce gap between skills */
+  padding: 10px; /* Less padding for a more compact feel */
+  justify-items: center;
 }
 
 .skill {
-  background-color: rgba(240, 240, 240, 0.8); /* Light background for contrast */
-  padding: 10px 20px; /* Padding for breathing room */
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  font-weight: 600; /* Bold text */
-  color: black; /* Text color */
-  text-align: center; /* Center the text */
-  min-width: 100px; /* Set a minimum width for each skill */
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 8px; /* Smaller padding for mobile */
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem; /* Slightly smaller font for mobile */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
+
+.skill:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.05); /* Slightly smaller scale for compact design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Less intense shadow */
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+      grid-template-columns: repeat(2, 1fr); /* Fit two skills per row for better mobile layout */
+      gap: 8px; /* Smaller gap for mobile */
+  }
+  
+  .skill {
+      padding: 6px; /* Further reduce padding for very small screens */
+      font-size: 0.8rem; /* Adjust font size for small screens */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adapt grid on smaller screens */
+      gap: 10px;
+  }
+  .skill {
+      padding: 8px;
+  }
+}
+
 
 /* CONTACT SECTION */
 #contact {
